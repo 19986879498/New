@@ -14,7 +14,10 @@ namespace HISDouble
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            string txt = "";
+            string desresult = DESCryptoService.DESEncrypt(txt, "Core_H_N");
+            string jmres = DESCryptoService.DESDecrypt(desresult, "Core_H_N");
+            //CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
