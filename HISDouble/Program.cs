@@ -14,6 +14,11 @@ namespace HISDouble
     {
         public static void Main(string[] args)
         {
+            //string text = "Data Source=192.168.1.85;Initial Catalog=ECAN_ECFP_ZJSRMYY;Persist Security Info=True;User ID=sa;Password=Zj123456;";
+            //string result = DESCryptoService.DESEncrypt(text, "Core_H_N");
+            //Console.WriteLine(result);
+            //string jmresult = DESCryptoService.DESDecrypt(result, "Core_H_N");
+            //Console.WriteLine(jmresult);
             CreateHostBuilder(args).Build().Run();
         }
 
