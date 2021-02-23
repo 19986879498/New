@@ -72,7 +72,7 @@ namespace HISDouble
             }
             info.workflowMainTableInfo.requestRecords = worklist.ToArray();
             return info;
-        } 
+        }
         /// <summary>
         /// 返回状态码的信息
         /// -1：创建流程失败
