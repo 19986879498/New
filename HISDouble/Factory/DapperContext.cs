@@ -29,11 +29,13 @@ namespace HISDouble.Factory
 
         public IDbConnection GetDbConnection(string ConnectionString)
         {
+            this.Conn = new Oracle.ManagedDataAccess.Client.OracleConnection(ConnectionString);
             return Conn;
         }
 
         public IDbConnection GetDbSqlConnection(string ConnectionString)
         {
+            this.Conn = new SqlConnection(ConnectionString);
             return Conn;
         }
 
